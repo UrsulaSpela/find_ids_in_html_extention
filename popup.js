@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function () {
       target: { tabId: tab.id },
       func: checkExistingIds,
       args: [inputValue], // Pass inputValue as an argument to the content script
+    }, (result) => {
+      displayMessage(result[0].result); // Call displayMessage with the result returned by checkExistingIds
     });
   });
 });
@@ -28,8 +30,7 @@ function checkExistingIds(inputValue) {
   return usersId;
 }
 
-function displayMessage() {
-  const usersId = checkExistingIds();
+function displayMessage(usersId) {
   if (usersId) {
     console.log("id already exists");
     const existsMessage = document.getElementById("exists");
