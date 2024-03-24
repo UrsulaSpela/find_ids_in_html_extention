@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    padding: 30px;
+}
+
+#avaliable{
+    color: green;
+    display: none;
+}
+
+#exists{
+    color: red;
+    display: none;
+}

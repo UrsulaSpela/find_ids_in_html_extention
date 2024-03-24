@@ -1,0 +1,10 @@
+{
+  "name": "ID finder",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Extension that helps you check if ID already exists in the HTML",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab", "scripting"]
+}
